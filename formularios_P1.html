@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        legend{
+            text-align: left;
+        }
+        table{
+            text-align: center;
+             margin: auto;
+            width: 80%;
+            table-layout: fixed; 
+             min-width: 600px;
+            max-width: 100%;  
+            border-collapse: collapse; 
+            
+        }
+        td {
+            text-align: left;
+            vertical-align: middle;
+            font-style: normal;
+            font-size: 20px;
+            color: rgb(140, 133, 202);
+        }
+        h1{
+            font-size: 50px;
+            color: rgb(35, 58, 102);
+        }
+        fieldset{
+            color: rgb(51, 33, 129);
+        }
+        input,option{
+            font-style: italic;
+        }
+    </style>
+</head>
+    <h1>Volkswagen Potosina </h1>   
+    <h2>Compras online</h2>
+<body>
+    
+        <form action="" method="post" enctype="text/plain" >
+         <fieldset>
+        <legend>Información general del clienrte</legend>
+        <table>
+            <td>
+                <label for="name">Nombre:</label> 
+                <input type="text" name="nombre" maxlength="25" placeholder="Nombre" title="Nombre" required>
+            </td>
+            <td>
+                <label for="apellido p">Apellido paterno:</label> <br/>
+                <input type="text" name="app" maxlength="25" placeholder="Apellido paterno" title="Apellido paterno">
+            </td>
+            <td>
+                <label for="apellido m">Apellido materno:</label> <br/>
+                <input type="text" name="apm" maxlength="25" placeholder="Apellido materno" title="Apellido materno">
+            </td>
+            </table>
+            <table>
+            <td>
+                <label for="name">Nombre del usuario:</label>
+                <br/>
+                <input type="text" name="nombre del usuario" maxlength="25" placeholder="Usuario" title="Nombre del usuario" required>
+            </td>
+            <td >
+                <label for="pass">Passaword: </label> 
+                <input type="password" name="pass" id="pass" maxlength="25" size="15" placeholder="password" title="password" required>
+            </td>
+            <td>
+                <label for="date">Fecha de registro:</label>
+                <input type="date" name="fecha" id="fecha"> <br>
+            </td>
+            </table>
+            </fieldset>
+            <fieldset>
+                <legend>Datos para facturar</legend>
+                <table>
+                    <td>
+                        <label for="pais" id="pais">Pais:</label> <br/>
+                        <select name="pais" id="pais" multiple required>
+                        <option>México</option>
+                        <option>Canada</option>
+                        <option>E.U.A</option>
+                        <option>Reino unido</option>
+                        
+                    </td>
+                    <td>
+                        <label for="Ciudad" id="Ciudad">Ciudad:</label> <br/>
+                        <select name="Ciudad" id="Ciudad" multiple required>
+                        <option>San Luis Potosí</option>
+                        <option>Monterrey</option>
+                        <option>Cd. Valles</option>
+                        
+                    </td>
+                    <td>
+                        <label for="Calle">Calle:</label>
+                        <br/>
+                        <input type="text" name="Calle" maxlength="25" placeholder="Calle" title="Calle">
+                        
+                    </td>
+                </table>
+                <table>
+                    <td>
+                        <label for="NC">Numero de casa</label>
+                        <br/>
+                        <input type="number" name="Numero de casa"placeholder="Numero exterior" title="numero exterior">
+                        
+                    </td>
+                    <td>
+                        <label for="Colonia">Colonia:</label>
+                        <br/>
+                        <input type="text" name="Colonia" maxlength="25" placeholder="Colonia" title="Colonia">
+                        
+                    </td>
+                    <td>
+                        <label for="email">Email:</label>
+                        <br/>
+                        <input type="email" name="Email" placeholder="Email" title="Email">
+                        
+                    </td>
+                </table>
+                <table>
+                    <td>
+                        <label for="RFC">RFC:</label>
+                        <br/>
+                        <input type="text" name="RFC" maxlength="13" placeholder="RFC" title="RFC">
+                    </td>
+                    <td>
+                        <label for="CP">C.P</label>
+                        <br/>
+                        <input type="number" name="Codigo postal"placeholder="Codigo postal" title="Codigo postal">
+                        
+                    </td>
+                    <td>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+<label for="terminos" style="font-style: normal;">Acepto términos y condiciones</label> <br>
+
+                        <input type="submit" name="Envio" id="envio" value="Enviar">
+					<input type="reset" name="borrar" value="Restablecer" id="borrar">
+    </fieldset>
+    </form>
+</body>
+</html>
