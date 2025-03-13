@@ -1,0 +1,48 @@
+/*hoja de estilos externas*/
+body{
+    background-color: rgb(214, 221, 233);
+    font-family: 'fantasy', 'sans-serif', Arial, sans-serif;
+}
+table{
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+/*para todos*/
+th,td{
+    border: 2px;
+   
+}
+/*para elementos adentro de li*/
+
+table tr:nth-child(add){
+    background-color: beige;
+}
+
+table tr:nth-child(even){
+    background-color: rgb(159, 192, 214);
+    color: white;
+}
+
+th{
+    background-color: rgb(73, 95, 153);
+    padding: 14px;
+    color: white;
+}
+
+td{
+    padding: 12px;
+    text-align: justify;
+}
+
+table tr:hover{
+    background-color: rgb(142, 159, 233);
+    color: white;
+}
+table td:hover{
+    background-color: rgb(73, 73, 121);
+    color: white;
+}
+
