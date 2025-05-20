@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calcula tu Propina</title>
+  <link rel="stylesheet" href="estilos3.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calcula tu Propina</h1>
+    <form id="tip-form">
+      <label for="subtotal">Total a pagar</label>
+      <input type="number" id="subtotal" required />
+
+      <label for="tip">Porcentaje a aplicar</label>
+      <input list="tip-options" id="tip" type="number" required />
+      <datalist id="tip-options">
+        <option value="5">
+        <option value="10">
+        <option value="15">
+        <option value="20">
+      </datalist>
+
+      <button type="submit">Realizar el cálculo</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+  <script src="P3.js"></script>
+</body>
+</html>
