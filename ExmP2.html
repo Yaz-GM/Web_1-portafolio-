@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen práctico Parcial 2</title>
+  <style>
+    body {
+      background-color: hsl(202, 22%, 90%);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: rgb(0, 51, 102);
+      margin-top: 20px;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      transition: opacity 0.5s ease;
+    }
+
+    .imagen img {
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+      border: 4px solid blue;
+    }
+
+    .boton-galeria {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 10px auto;
+    }
+
+    .boton-galeria:hover {
+      background-color: white;
+      color: blue;
+      border: 2px solid blue;
+    }
+
+    .boton-galeria:hover + .galeria {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Examen práctico Parcial 2</h1>
+  <h2 style="color: black;">Nombre del alumno(a):</h2>
+  <h2 style="color: rgb(0, 51, 102);">Vanessa Yazmin Gallegos Martinez</h2>
+
+  <button class="boton-galeria">Galería de imágenes</button>
+
+  <div class="galeria">
+    <div class="imagen">
+      <img src="ballena.jpg" alt="Ballena">
+    </div>
+    <div class="imagen">
+      <img src="cora.jpg" alt="Corazón">
+    </div>
+    <div class="imagen">
+      <img src="medusa.jpg" alt="Medusa">
+    </div>
+    <div class="imagen">
+      <img src="Tortuga.jpg" alt="Tortuga">
+    </div>
+  </div>
+
+</body>
+</html>
