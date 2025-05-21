@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portafolio Yazmín Gallegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4 {
+            color: #f1f1f1;
+            font-weight: 600;
+        }
+
+        .hero-image {
+            height: 100vh;
+            background-image: url('cat.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .overlay-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 3rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .overlay-text:hover {
+            transform: scale(1.02);
+        }
+
+        .section-title {
+            border-left: 4px solid #777;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-section, .content-section {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .info-section:hover, .content-section:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+        }
+
+        a {
+            color: #cfcfcf;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        hr {
+            border-color: #444;
+        }
+
+        ul, ol {
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #aaa;
+            border-top: 1px solid #333;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-image">
+        <div class="overlay-text">
+            <h1>PROGRAMACIÓN WEB I</h1>
+            <p style="font-weight: bold;">Yazmín Gallegos</p>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <section class="info-section fade-in">
+            <h2 class="section-title">Portafolio de Evidencias</h2>
+            <h4 class="text-center">Ingeniería en Tecnologías de la Información</h4>
+            <p class="text-center">Universidad Politécnica de San Luis Potosí - Primavera 2025</p>
+            <hr />
+            <h5>Alumno: Vanessa Yazmín Gallegos Martínez</h5>
+            <h5>Profesora: MC Imelda Deyanira Hernández Martínez</h5>
+            <hr />
+            <h4>Autobiografía</h4>
+            <p>
+                Mi nombre es Vanessa Yazmín Gallegos Martínez, tengo 19 años, nací el 26 de junio de 2005 en San Luis Potosí.
+                Me gusta el ciclismo, hacer ejercicio, la mecánica automotriz, cocinar y leer. Curso el 4° semestre en ITI en la UPSLP.
+                El futuro es incierto, pero lo iré descubriendo paso a paso.
+            </p>
+        </section>
+
+        <section class="content-section fade-in">
+            <h2 class="section-title">Misión de la carrera</h2>
+            <p>
+                Formar profesionales comprometidos con la excelencia, el desarrollo tecnológico y la solución de problemas computacionales.
+            </p>
+
+            <h2 class="section-title">Visión de la carrera</h2>
+            <ul>
+                <li>Egresados con altos estándares y competencias técnicas.</li>
+                <li>Reconocimiento laboral nacional e internacional.</li>
+                <li>Certificaciones, dominio del inglés y experiencia práctica.</li>
+            </ul>
+
+            <h2 class="section-title">Objetivo de la materia</h2>
+            <p>
+                Capacitar al alumno en el uso de HTML, CSS y JavaScript para crear, publicar y mantener sitios web profesionales.
+            </p>
+        </section>
+
+        <section class="content-section fade-in">
+            <h2 class="section-title">Consideraciones de clase</h2>
+            <ol>
+                <li>Sesiones de lunes a viernes.</li>
+                <li>Asistencia mínima del 90%.</li>
+                <li>Material disponible en Blackboard y Teams.</li>
+                <li>Tareas entregadas a tiempo y por el medio establecido.</li>
+                <li>No se aceptan tareas por correo electrónico.</li>
+            </ol>
+
+            <h2 class="section-title">Contenidos de la materia</h2>
+            <ol type="a">
+                <li>HTML</li>
+                <li>HTML Avanzado</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Diseño responsivo</li>
+            </ol>
+        </section>
+
+        <section class="content-section fade-in">
+            <h2 class="section-title">Mis Tareas</h2>
+            <ul>
+                <li>Inicio
+                    <ol>
+                        <li>Práctica 1 (Es el portafolio)</li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/Practica_2tablas.html" target="_blank">Práctica 2</a></li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/inframe.html" target="_blank">Práctica 3</a></li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/Exm_Practico.html">Examen Practico</a></li>
+                            
+                    </ol>
+                </li>
+                <li>Parcial 2
+                    <ol>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/formularios_P1.html">Práctica 1 - Formularios</a> </li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/formularios_P1.html">Práctica 2 - Formularios con CSS</a> </li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/Tablas.html">Práctica 3 - Tablas CSS</a></li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/Barra_simple.html">Practica 4 - Barra de navegación</a></li>
+                        <li>Practica 5 - Barra de navegacion fija (NO LO ENVIE)</li>
+                        <LI><a href="">Practica 6</a></LI>
+                        <li><a href="">Practica 7 - Flexbox (NO LO ENVIE)</a></li>
+                        <LI>Practica 8 - Propiedades position y z-index (NO LO ENVIE)</LI>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/Practica9.html" target="_blank">Práctica 9 - Unidades de medida</a></li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/ExmP2.html">Examen Practico II</a></li>
+                        
+                    </ol>
+                </li>
+                <li>Parcial 3</li>
+                    <ol>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/Act1_p3W.html">Practica 1</a></li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/act2.html">Practica 2</a></li>
+                        <li>Practica 3 (NO LA ENVIE)</li>
+                        <li><a href="https://yaz-gm.github.io/Web_1-portafolio-/exmP.html"> Examen Practico III</a></li>
+
+                    </ol>
+                <li>Proyecto final (por agregar)</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Vanessa Yazmín Gallegos Martínez.Portafolio de programacion 1</p>
+    </footer>
+
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        faders.forEach(fader => observer.observe(fader));
+    </script>
+</body>
+</html>
